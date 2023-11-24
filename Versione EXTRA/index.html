@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Interface</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        font-size: larger;
+      }
+      .phone {
+        width: 360px;
+        height: 640px;
+        border: 16px solid black;
+        border-radius: 36px;
+        padding: 16px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .topScreen {
+        width: 100%;
+        height: 25%;
+        background-color: white;
+        line-height: 3rem;
+      }
+      #callResults {
+        width: 100%;
+        height: 75%;
+        overflow-y: auto;
+      }
+      button {
+        margin-block: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center">
+      <div class="phone">
+        <div class="topScreen">
+          <div style="display: flex">
+            <label for="call1">Simula Call Mario</label>
+            <div style="flex-grow: 1"></div>
+            <button id="call1">Call</button>
+            <button id="results1">Calcola</button>
+          </div>
+          <div style="display: flex">
+            <label for="call2">Simula Call Luigi</label>
+            <div style="flex-grow: 1"></div>
+            <button id="call2">Call</button>
+            <button id="results2">Calcola</button>
+          </div>
+          <div style="display: flex">
+            <label for="call3">Simula Call Peach</label>
+            <div style="flex-grow: 1"></div>
+            <button id="call3">Call</button>
+            <button id="results3">Calcola</button>
+          </div>
+          <br />
+        </div>
+        <div id="callResults"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
